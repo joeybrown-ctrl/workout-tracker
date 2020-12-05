@@ -1,6 +1,8 @@
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
+const path = require("path");
+const apiRoutes = require("./routes/apiRoutes.js");
 
 const PORT = process.env.PORT || 3000;
 
@@ -16,6 +18,16 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
+
+app.get("/exercise", (req, res) => {
+    res.sendFile(path.join(__dirname, "./public/exercise.html"))
+});
+
+app.use(apiRoutes);
+
+// app.post("/exercise", (req, res) => {
+
+// })
 
 // db.User.create({ name: "Ernest Hemingway" })
 //     .then(dbUser => {

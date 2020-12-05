@@ -15,6 +15,8 @@ router.get("/api/workouts", (req, res) => {
     });
 });
 
+
+
 //update one
 
 router.put("/api/workouts/:id", (req, res) => {
@@ -28,6 +30,7 @@ router.put("/api/workouts/:id", (req, res) => {
     })
     .catch((err) => {
         res.status(400).json(err);
+        console.log(err);
     });
 });
 
