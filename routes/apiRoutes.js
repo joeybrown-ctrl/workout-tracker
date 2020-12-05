@@ -16,7 +16,6 @@ router.get("/api/workouts", (req, res) => {
 });
 
 
-
 //update one
 
 router.put("/api/workouts/:id", (req, res) => {
