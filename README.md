@@ -26,7 +26,7 @@
 
 This is a workout tracker app that allows the user to view, create and track daily workouts. The user can log multiple exercises within a workout, as well as tracking the exercise names, types, weight, sets, reps and the duration. The user is given the option of choosing either a resistance or cardio workout. The latter allows the user to track their distance traveled.
 
-This app uses a Mongo database using Mongo Atlas wtih a Mongoose Schema. Routes are handles using Express.
+This app uses a Mongo database using Mongo Atlas with a Mongoose Schema. Routes are handled using Express.
 
   <hr>
 
