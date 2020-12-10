@@ -4,7 +4,7 @@
 
 **version 1.0.0**
 
-[For deployed version, click me](https://git.heroku.com/workout-tracker-joeybrown-ctrl.git)
+[For deployed version, click me](https://workout-tracker-joeybrown-ctrl.herokuapp.com/)
 
 <br>
 
