@@ -30,7 +30,7 @@
 
   <hr>
 
-![image of workout tracker]()
+![image of workout tracker](https://raw.githubusercontent.com/joeybrown-ctrl/workout-tracker/main/public/Assets/workoutLanding.png)
 
 <br>
 
