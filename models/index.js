@@ -1,4 +1,4 @@
-// Exporting an object containing model
+//Exporting an object containing model
 
 module.exports = {
     workout: require("./workout")

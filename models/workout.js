@@ -1,7 +1,9 @@
+//Pulling in necessary packages, access to schema and making sure the Mongoose virtual can work
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const opts = { toJSON: { virtuals: true } };
 
+//Mongoose schema
 const workoutSchema = new Schema({
     day: {
         type: Date,
@@ -36,9 +38,7 @@ const workoutSchema = new Schema({
     ]
 }, opts);
 
-//make total duration function (this will be a column within the model that adds the duration of workouts and then puts that total to the
-//front end. Check Thurs activities for custom models reference.)
-
+//Virtual schema to show the total duration of workouts
 workoutSchema.virtual('totalDuration').get(function () {
     let result = 0;
     this.exercises.forEach(element => {
@@ -47,6 +47,6 @@ workoutSchema.virtual('totalDuration').get(function () {
     return result;
 });
 
+//Accessing + exporting the Mongoose model
 const Workout = mongoose.model("Workout", workoutSchema);
-
 module.exports = Workout;
