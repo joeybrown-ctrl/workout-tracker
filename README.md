@@ -28,6 +28,8 @@ This is a workout tracker app that allows the user to view, create and track dai
 
 This app uses a Mongo database using Mongo Atlas with a Mongoose Schema. Routes are handled using Express.
 
+Shoutout to [Chris Falk](https://github.com/chrisfalk88) for his collaboration on this project!
+
   <hr>
 
 ![image of workout tracker](https://raw.githubusercontent.com/joeybrown-ctrl/workout-tracker/main/public/Assets/workoutLanding.png)
